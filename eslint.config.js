@@ -19,7 +19,7 @@ export default [
     },
     settings: { react: { version: '18.3' } },
     plugins: {
-      react,
+      'react',
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
@@ -33,6 +33,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "react/jsx-uses-vars": "error",
+      "react/jsx-uses-react": "error",
     },
   },
 ]
